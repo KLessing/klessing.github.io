@@ -2,11 +2,11 @@
 
 print("""
 Loading 1-12 from 1-12.apk
-    Pygbag Version : 0.8.6
+    Pygbag Version : 0.8.4
     Template Version : 0.8.3
     Python  : 3.11
     CDN URL : https://pygame-web.github.io/archives/0.8/
-    Screen  : 1280x720
+    Screen  : {{cookiecutter.width}}x{{cookiecutter.height}}
     Title   : 1-12
     Folder  : 1-12
     Authors : pgw
@@ -16,8 +16,8 @@ Loading 1-12 from 1-12.apk
 
 
 # screen pixels (real, hardware)
-WIDTH=1024  # 1280
-HEIGHT=600  # 720
+WIDTH=1024  # {{cookiecutter.width}}
+HEIGHT=600  # {{cookiecutter.height}}
 
 # reference/idealized screen pixels
 REFX = 1980
